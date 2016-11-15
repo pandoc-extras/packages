@@ -1,0 +1,29 @@
+# Simple structure:
+# - name: FILTER_NAME
+#   url: FILTER_URL (optional if url-type is pip)
+#   url-type: simple|pip (default is simple)
+
+# Complex structure:
+# - name: FILTER_NAME
+#   branches:
+#     branch1:
+#       url: BRANCH_URL
+#       url-type: simple|pip
+#   url: FILTER_URL (optional if url-type is pip)
+#   url-type: simple|pip (default is simple)
+
+# Note: Branch 'default' will be run if no branch specified
+
+- name: caps
+  url: https://raw.githubusercontent.com/sergiocorreia/panflute/master/examples/panflute/caps.py
+- name: debug
+  url: https://raw.githubusercontent.com/sergiocorreia/panflute-filters/master/filters/debug.yaml
+- name: pandoc-eqnos
+  branches:
+    - branch: default
+      url-type: pip
+    - branch: dev
+      url: https://raw.githubusercontent.com/tomduck/pandoc-eqnos/master/pandoc_eqnos.py
+      url-type: simple
+
+# EOF
