@@ -23,7 +23,7 @@
     - branch: default
       url-type: pip
     - branch: dev
-      url: https://raw.githubusercontent.com/tomduck/pandoc-eqnos/master/pandoc_eqnos.py
+      url: git://github.com/tomduck/pandoc-eqnos.git
       url-type: simple
 
 # EOF
