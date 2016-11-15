@@ -18,6 +18,8 @@
   url: https://raw.githubusercontent.com/sergiocorreia/panflute/master/examples/panflute/caps.py
 - name: debug
   url: https://raw.githubusercontent.com/sergiocorreia/panflute-filters/master/filters/debug.yaml
+- name: tabulate-elements
+  url: https://raw.githubusercontent.com/sergiocorreia/panflute-filters/master/filters/tabulate-elements.yaml
 - name: pandoc-eqnos
   branches:
     - branch: default
